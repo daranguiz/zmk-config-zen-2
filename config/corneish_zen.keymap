@@ -70,12 +70,12 @@
                 compatible = "zmk,keymap";
 
                 base_layer {
-                        label = "COLEMAK";
+                        label = "CLMK";
                         bindings = <
 &none     &kp Q             &kp W             &kp F             &kp P             &kp G             &kp J             &kp L             &kp U             &kp Y             &kp SQT           &none
 &none     &lh_pht LGUI A        &lh_pht LALT R        &lh_pht LCTRL S       &lh_bal LSHFT T       &kp D             &kp H             &rh_bal LSHFT N       &rh_pht LCTRL E       &rh_pht LALT I        &rh_pht LGUI O        &none
-&none     &lh_pht BUTTON Z      &lh_pht RALT X        &kp C             &kp V             &kp B             &kp K             &kp M             &kp COMMA         &rh_pht RALT DOT      &rh_pht BUTTON SLASH  &none
-                                    &lt MEDIA ESC     &lt NAV SPC       &kp TAB     &lt SYM RET       &lt NUM BSPC      &lt FUN DEL       
+&none     &lh_pht BUTTON Z      &lh_pht RALT X        &kp C             &kp V             &kp B             &kp K             &kp M             &kp COMMA         &rh_pht RALT DOT      &rh_pht BUTTON SLASH  &none   
+                                    &kp RET           &lt NAV SPC       &lt MEDIA TAB     &lt SYM DEL       &kp LSHFT      &lt NUM BSPC       
 
                         >;
                 };
@@ -85,7 +85,7 @@
 &none     &bootloader       &reset              &none              &none              &none              &kp K_REDO             &kp K_PASTE             &kp K_COPY             &kp K_CUT             &kp K_UNDO          &none   
 &none     &kp LGUI          &kp LALT          &kp LCTRL         &kp LSHFT         &none              &kp CAPS          &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT      &none   
 &none     &none              &kp RALT          &none              &none              &none              &kp INS           &kp HOME          &kp PG_DN         &kp PG_UP         &kp END        &none   
-                                    &none              &none              &none              &kp RET           &kp BSPC          &kp DEL           
+                                    &none              &none              &none              &kp DEL           &kp ENT          &kp BSPC           
 
 
                         >;
