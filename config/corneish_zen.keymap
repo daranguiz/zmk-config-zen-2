@@ -85,7 +85,7 @@
 &none     &bootloader       &reset              &none              &none              &none              &kp K_REDO             &kp K_PASTE             &kp K_COPY             &kp K_CUT             &kp K_UNDO          &none   
 &none     &kp LGUI          &kp LALT          &kp LCTRL         &kp LSHFT         &none              &kp CAPS          &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT      &none   
 &none     &none              &kp RALT          &none              &none              &none              &kp INS           &kp HOME          &kp PG_DN         &kp PG_UP         &kp END        &none   
-                                    &none              &none              &none              &kp DEL           &kp ENT          &kp BSPC           
+                                    &none              &none              &none              &kp DEL           &kp RET          &kp BSPC           
 
 
                         >;
