@@ -14,6 +14,13 @@
 #define U_BTN2 &none
 #define U_BTN3 &none
 
+/ {
+  chosen {
+    zmk,matrix_transform = &default_transform;
+    //zmk,matrix_transform = &five_column_transform;
+  };
+};
+
 &lt {
         tapping-term-ms = <200>;    // <---[[moderate duration]]
         flavor = "balanced";
@@ -63,6 +70,7 @@
                 compatible = "zmk,keymap";
 
                 base_layer {
+                        label = "COLEMAK";
                         bindings = <
 &none     &kp Q             &kp W             &kp F             &kp P             &kp G             &kp J             &kp L             &kp U             &kp Y             &kp SQT           &none
 &none     &lh_pht LGUI A        &lh_pht LALT R        &lh_pht LCTRL S       &lh_bal LSHFT T       &kp D             &kp H             &rh_bal LSHFT N       &rh_pht LCTRL E       &rh_pht LALT I        &rh_pht LGUI O        &none
@@ -72,6 +80,7 @@
                         >;
                 };
                 nav_layer {
+                        label = "NAV";
                         bindings = <
 &none     &bootloader       &reset              &none              &none              &none              &kp K_REDO             &kp K_PASTE             &kp K_COPY             &kp K_CUT             &kp K_UNDO          &none   
 &none     &kp LGUI          &kp LALT          &kp LCTRL         &kp LSHFT         &none              &kp CAPS          &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT      &none   
@@ -82,6 +91,7 @@
                         >;
                 };
                 button_layer {
+                        label = "BUTTON";
                         bindings = <
 &none     &kp K_UNDO             &kp K_CUT             &kp K_COPY             &kp K_PASTE             &kp K_REDO             &kp K_REDO             &kp K_PASTE             &kp K_COPY             &kp K_CUT             &kp K_UNDO             &none
 &none     &kp LGUI          &kp LALT          &kp LCTRL         &kp LSHFT         &none             &none             &kp LSHFT         &kp LCTRL         &kp LALT          &kp LGUI          &none
@@ -90,6 +100,7 @@
                         >;
                 };
                 media_layer {
+                        label = "MEDIA";
                         bindings = <
 &none     &bootloader       &reset              &none              &none              &none              &none &bt BT_SEL 0 &bt BT_NXT &bt BT_PRV &bt BT_CLR   &none
 &none     &kp LGUI          &kp LALT          &kp LCTRL         &kp LSHFT         &none              &none      &kp C_PREV        &kp C_VOL_DN      &kp C_VOL_UP      &kp C_NEXT        &none
@@ -99,6 +110,7 @@
                         >;
                 };
                 num_layer {
+                        label = "NUM";
                         bindings = <
 &none     &kp LBKT          &kp NUM_4         &kp NUM_5         &kp NUM_6         &kp RBKT          &none              &none              &none              &none              &bootloader       &none
 &none     &kp SEMI          &kp NUM_1         &kp NUM_2         &kp NUM_3         &kp EQL           &none              &kp LSHFT         &kp LCTRL         &kp LALT          &kp LGUI          &none
@@ -108,6 +120,7 @@
                         >;
                 };
                 sym_layer {
+                        label = "SYM";
                         bindings = <
 &none     &kp LBRC          &kp DLLR          &kp PRCT          &kp CRRT          &kp RBRC          &none              &none              &none              &none              &bootloader       &none
 &none     &kp COLON         &kp EXCL          &kp AT            &kp HASH          &kp PLUS          &none              &kp LSHFT         &kp LCTRL         &kp LALT          &kp LGUI          &none
@@ -118,6 +131,7 @@
                         >;
                 };
                 fun_layer {
+                        label = "FUNC";
                         bindings = <
 &none     &kp F12           &kp F7            &kp F8            &kp F9            &kp PSCRN         &none              &none              &none              &none              &bootloader       &none
 &none     &kp F11           &kp F4            &kp F5            &kp F6            &kp SLCK          &none              &kp LSHFT         &kp LCTRL         &kp LALT          &kp LGUI          &none
