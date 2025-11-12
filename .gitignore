@@ -4,3 +4,14 @@ zephyr/
 modules/
 tools/
 .west/
+firmware/
+
+# macOS
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
